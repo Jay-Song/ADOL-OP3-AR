@@ -44,7 +44,7 @@ int main(int argc, char **argv)
       int n = client.sendIMGData(img_buffer, img_size);
       //std::cout << n << std::endl;
 
-      cv::imshow("streaming video", frame);
+      //cv::imshow("streaming video", frame);
       if (cv::waitKey(16) == 27)
         break;
     }
@@ -54,7 +54,7 @@ int main(int argc, char **argv)
     std::cout << "NO FRAME, CHECK YOUR CAMERA!" << std::endl;
   }
 
-  cv::destroyAllWindows();
+  //cv::destroyAllWindows();
   
   delete[] img_buffer;
 

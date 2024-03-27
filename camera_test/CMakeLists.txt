@@ -15,6 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
 )
 
+find_package(OpenCV)
+
 
 ################################################################################
 # Setup for python modules and scripts
@@ -33,7 +35,7 @@ find_package(catkin REQUIRED COMPONENTS
 ################################################################################
 catkin_package(
   #INCLUDE_DIRS include
-  LIBRARIES ${PROJECT_NAME} opencv
+  #LIBRARIES ${PROJECT_NAME} opencv
   CATKIN_DEPENDS roscpp cv_bridge 
 )
 
